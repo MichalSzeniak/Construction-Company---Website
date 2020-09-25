@@ -1,0 +1,39 @@
+.navigation {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        &--item {
+            // margin: 16px 64px;
+        }
+    }
+}
+
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    background-color: $grey-dark;
+    padding: 16px 64px;
+}
+
+.link__main {
+    color: black;
+    background-color: $yellow;
+    padding: 16px 64px;
+}
