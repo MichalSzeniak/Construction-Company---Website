@@ -1,0 +1,46 @@
+.information-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.article-head {
+    font-size: 48px;
+    margin: 35px 0 20px 0;
+    color: $grey-dark;
+}
+
+.article-container {
+    width: 600px;
+    margin-top: 50px;
+}
+
+.about {
+
+    &__paragraph {
+        margin-top: 32px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-dark;
+    }
+}
+
+
+.article {
+    &-item {
+        margin-top: 32px;
+    }
+
+    &__space {
+        font-size: 24px;
+        font-weight: bold;
+        color: $grey-dark;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-dark;
+    }
+}
