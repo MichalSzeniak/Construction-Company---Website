@@ -1,0 +1,17 @@
+.photos-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    &__item {
+        margin-bottom: 100px;
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 500;
+        padding-top: 32px;
+    }
+}
