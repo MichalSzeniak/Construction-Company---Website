@@ -3,15 +3,17 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
 
 
     &__item {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__description {
         font-size: 24px;
         font-weight: 500;
-        padding-top: 32px;
     }
 }
