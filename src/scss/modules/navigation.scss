@@ -5,6 +5,13 @@
     display: flex;
     height: 50px;
     font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out ;
+
+    &__scroll {
+        top: 0px;
+        transition: 0.3s ease-in-out ;
+    }
 
     &__container {
         max-width: 1400px;
@@ -33,6 +40,9 @@
 .link {
     text-decoration: none;
     color: #fff;
+
+    //nie robia sie odstepy "entery"
+    white-space: nowrap;
 }
 
 .link__main {

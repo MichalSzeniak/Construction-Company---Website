@@ -38,3 +38,15 @@ const newAnimal = "mouse";
 const allAnimals = [...animals, newAnimal, "monkey"];
 
 console.log(allAnimals);
+
+
+const navigation = document.querySelector(".navigation");
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 50) {
+      navigation.classList.add("navigation__scroll")
+    }
+    else if (window.pageYOffset < 50) {
+      navigation.classList.remove("navigation__scroll")
+    }
+  })

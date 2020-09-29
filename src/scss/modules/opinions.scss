@@ -1,5 +1,46 @@
 .opinions {
-    width: 100%;
-    height: 550px;
-    background-color: $grey-light;
+  width: 100%;
+  background-color: $grey-light;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__head {
+    font-size: 48px;
+    font-weight: bold;
+    color: $grey-dark;
+    margin-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  &__elements {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $grey-dark;
+    text-align: center;
+  }
+
+  &__item {
+    width: 450px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 100px;
+    padding: 0 64px;
+  }
+
+  &__item-2 {
+    border-right: 2px solid $grey-dark;
+    border-left: 2px solid $grey-dark;
+  }
+
+}
+
+.opinion-writer {
+  margin-top: 32px;
+  color: black;
+  font-weight: bold;
 }
