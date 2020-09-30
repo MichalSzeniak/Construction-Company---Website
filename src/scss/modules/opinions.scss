@@ -21,6 +21,11 @@
     align-items: center;
     color: $grey-dark;
     text-align: center;
+
+    @media (max-width: 1350px) {
+      display: flex;
+      flex-direction: column;
+  }
   }
 
   &__item {
@@ -30,11 +35,23 @@
     line-height: 1.8;
     margin-bottom: 100px;
     padding: 0 64px;
+
+    @media (max-width: 1350px) {
+      padding: 0;
+    }
   }
 
   &__item-2 {
     border-right: 2px solid $grey-dark;
     border-left: 2px solid $grey-dark;
+
+    @media (max-width: 1350px) {
+      padding: 64px 0;
+      border-bottom: 2px solid $grey-dark;
+      border-top: 2px solid $grey-dark;
+      border-left: 0;
+      border-right: 0;
+  }
   }
 
 }

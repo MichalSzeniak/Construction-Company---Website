@@ -8,8 +8,11 @@
     }
 
     &__line {
-        max-width: 1600px;
-        margin: 32px 0 48px;
+        margin: 24px 0 32px;
+
+        @media (max-width: 1050px) {
+            display: none;
+        }
     }
 
     &__head {
@@ -17,17 +20,18 @@
         font-weight: 500;
         margin-top: 100px;
 
-        @media (max-width: 1350px) {
+        @media (max-width: 1050px) {
             display: flex;
             justify-content: center;
+            margin: 80px 0 8px;
         }
     }
 }
 
-.localization-text-container {
-    @media (max-width: 1350px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+// .localization-text-container {
+//     @media (max-width: 1350px) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+// }
