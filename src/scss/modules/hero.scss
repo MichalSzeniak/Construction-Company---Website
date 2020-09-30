@@ -28,6 +28,10 @@
         align-items: center;
         text-align: center;
 
+        @media (max-width: 1350px) {
+            display: none;
+        }
+
         &--icon {
             width: 50px;
             height: 50px;

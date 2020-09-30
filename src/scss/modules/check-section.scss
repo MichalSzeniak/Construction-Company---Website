@@ -3,6 +3,7 @@
     background-color: $grey;
     margin: 130px 0;
 
+
     &__container {
         height: 200px;
         max-width: 1400px;
@@ -12,12 +13,20 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 70px;
+
+        @media (max-width: 1350px) {
+            height: 100px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: row;
         list-style: none;
+
+        @media (max-width: 1350px) {
+            display: none;
+        }
 
         &--item1 {
             background-color: $yellow;
@@ -53,5 +62,9 @@
         font-size: 36px;
         font-weight: 500;
         color: $grey-light;
+
+        @media (max-width: 1350px) {
+            margin: 0 auto;
+        }
     }
 }

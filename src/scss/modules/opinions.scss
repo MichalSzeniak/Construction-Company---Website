@@ -24,7 +24,7 @@
   }
 
   &__item {
-    width: 450px;
+    max-width: 450px;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.8;
@@ -37,6 +37,10 @@
     border-left: 2px solid $grey-dark;
   }
 
+}
+
+.opinion {
+    font-style: italic;
 }
 
 .opinion-writer {

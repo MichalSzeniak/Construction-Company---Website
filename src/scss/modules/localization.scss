@@ -16,5 +16,18 @@
         font-size: 48px;
         font-weight: 500;
         margin-top: 100px;
+
+        @media (max-width: 1350px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.localization-text-container {
+    @media (max-width: 1350px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

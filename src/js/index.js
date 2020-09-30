@@ -50,3 +50,11 @@ window.addEventListener('scroll', () => {
       navigation.classList.remove("navigation__scroll")
     }
   })
+
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".navigation");
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hamburger__active');
+    nav.classList.toggle('navigation__active');
+  })
