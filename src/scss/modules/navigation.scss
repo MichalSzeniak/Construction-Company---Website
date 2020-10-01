@@ -6,27 +6,30 @@
   height: 50px;
   font-size: 18px;
   font-weight: 500;
-  transition: transform 0.3s ease-in-out 0.1s;
+  transition:  0.3s ease-in-out 0.1s;
 
   @media (max-width: 1350px) {
-    // visibility: hidden;
-    // display: none;
-    position: absolute;
-    left: -300px;
+    display: flex;
     top: 0;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 300px;
+    width: 100%;
+    transform: translateX(1000px);
+
 
     &__active {
-      visibility: visible;
-      display: block;
-
-      transform: translateX(300px);
+      // display: block;
+      transform: scale(1.5) translateX(0);
+      background-color: $blue;
     }
   }
 
   &__scroll {
+
+    @media (min-width: 1345px) {
     transform: translateY(-100px);
+    }
   }
 
   &__container {
