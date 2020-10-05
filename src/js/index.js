@@ -1,5 +1,10 @@
 import '../scss/main.scss';
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 console.log('HELLO 🚀')
 
@@ -58,3 +63,24 @@ window.addEventListener('scroll', () => {
     hamburger.classList.toggle('hamburger__active');
     nav.classList.toggle('navigation__active');
   })
+
+
+  //G-SAP
+
+  // const about = document.querySelector(".about");
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach(section => {
+      gsap.fromTo(section.children, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'easeInOut', scrollTrigger: {
+    trigger: section,
+    start: 'top 80%',
+    markers: true,
+  }})
+  })
+
+
+  // gsap.fromTo(about.children, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'easeInOut', scrollTrigger: {
+  //   trigger: '.about',
+  //   start: 'top 80%',
+  //   markers: true,
+  // }})
