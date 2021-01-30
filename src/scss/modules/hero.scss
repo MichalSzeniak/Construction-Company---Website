@@ -45,6 +45,11 @@
 
         &--items {
             display: flex;
+            transition: .3s transform ease-in-out;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
 
             @media (max-width: 850px) {
                 padding: 32px 0;
